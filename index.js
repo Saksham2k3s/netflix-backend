@@ -23,7 +23,7 @@ app.use(cookieParser());
 
 // CORS configuration
 const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: process.env.CORS_ORIGIN,
     credentials: true, // Allow credentials (cookies)
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
